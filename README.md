@@ -3,7 +3,8 @@
 ### Mysql
 ```
 $docker pull mysql/mysql-server:5.6 || 5.7.26
-$docker run --name mysql-5.6 -e MYSQL_ROOT_PASSWORD=docker -p 3306:3306 -d mysql:5.6 || 5.7.26
+$docker run --name mysql-5.6 -e MYSQL_ROOT_PASSWORD=docker -p 3306:3306 -d mysql:5.6
+$docker run --name mysql-5.7 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3306:3306 -d mysql:5.7
 $docker start mysql-5.6
 ```
 
