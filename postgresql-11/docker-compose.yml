@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: "postgres:11"
+    container_name: "postgre-v11"
+    ports:
+      - "54320:5432"
+    volumes:
+      - postgre_dbdata:/var/lib/postgresql/data
+volumes:
+  postgre_dbdata:

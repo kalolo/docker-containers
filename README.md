@@ -15,3 +15,11 @@ $docker build --tag=mongo-v1 .
 $docker run --name mongo-v1 -d -p 27017:27017 -d mongo-v1
 $docker start mongo-v1
 ```
+
+### PostgreSQL v11
+```
+$cd postgresql-11/
+$docker-compose up -d
+$docker logs -f postgre-v11
+$docker exec -it postgre-v11 psql -U postgres
+
