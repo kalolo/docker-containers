@@ -8,6 +8,14 @@ $docker run --name mysql-5.7 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3306:3306 -d m
 $docker start mysql-5.6
 ```
 
+### Mysql 8
+```
+$docker pull mysql/mysql-server
+$docker run --name mysql-5.8 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3306:3306 -d mysql/mysql-server
+$docker start mysql-5.8
+```
+
+
 ### Mongo
 ```
 $cd mongodb
@@ -22,4 +30,10 @@ $cd postgresql-11/
 $docker-compose up -d
 $docker logs -f postgre-v11
 $docker exec -it postgre-v11 psql -U postgres
+```
 
+### Redis
+```
+$docker run --name redis-local -p 6379:6379 -d redis
+$docker start redis-local
+```
