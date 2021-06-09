@@ -37,3 +37,15 @@ $docker exec -it postgre-v11 psql -U postgres
 $docker run --name redis-local -p 6379:6379 -d redis
 $docker start redis-local
 ```
+
+### Clickhouse
+```
+$cd clickhouse/
+$docker-compose up -d
+```
+
+Execute client:
+```
+$cd clickhouse/
+$docker-compose exec ch_server clickhouse-client
+```
