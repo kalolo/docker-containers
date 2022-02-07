@@ -15,6 +15,14 @@ $docker run --name mysql-5.8 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3306:3306 -d m
 $docker start mysql-5.8
 ```
 
+#### Mysql percona 5.7
+```
+$docker pull percona/percona-server:5.7
+$docker run --name mysql-percona-5.7 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -p 3306:3306 -d percona/percona-server:5.7
+$docker start mysql-percona-5.7
+```
+
+
 
 ### Mongo
 ```
@@ -49,3 +57,5 @@ Execute client:
 $cd clickhouse/
 $docker-compose exec ch_server clickhouse-client
 ```
+
+
